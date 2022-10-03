@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> Menghitung dengan variabel lokal. </p>
+<button type="button" onclick="myFunction()">Hitung</button>
+<p id="demo">0</p>
+<script>
+var add = (function () {
+  var counter = 0;
+  return function () {counter += 1; return counter;}
+})();
+function myFunction(){
+  document.getElementById("demo").innerHTML = add();
+}
+</script>
+</body>
+</html>
