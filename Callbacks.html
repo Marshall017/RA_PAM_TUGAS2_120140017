@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>asdasd</title>
+    <script>
+        function message(message, callbackss) {
+            for (var i = 1; i <= 2; i++) {
+                alert(message + '-' + i);
+            }
+            callbackss();
+        }
+
+        message('Ini adalah pesan saya ke ', function () {
+            alert('Ini adalah pesan yang ditampilkan lewat callback!');
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
