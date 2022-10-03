@@ -2,4 +2,4 @@
   console.log('hello ' + nama);
 })('Marshall');
 
-// Output: hello reza
+// Output: hello Marshall
