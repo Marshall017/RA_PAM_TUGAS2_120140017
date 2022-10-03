@@ -1,0 +1,17 @@
+function sapa(waktu) {
+  return function(Nama) {
+    return waktu + " " + Nama;
+  }
+}
+// Jika dipanggil langsung
+sapa("Selamat Malam")("Marshall");
+
+// Jika dimasukkan ke dalam variable
+var greeting = sapa("Selamat Malam");
+greeting; 
+// Output: function(Nama) { return waktu + " " + Nama; }
+
+// setelah disimpan dalam variable
+// fungsi tersebut bisa diselesaikan pemanggilannya
+greeting("Marshall"); // Output: "Selamat Malam"
+greeting("Diba"); // Hasilnya: "Selamat Malam Diba"
